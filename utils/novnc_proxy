@@ -178,7 +178,7 @@ else
     if [ ! -f "$WEBSOCKIFY" ]; then
         echo "No installed websockify, attempting to clone websockify..."
         WEBSOCKIFY=${HERE}/websockify/run
-        git clone https://github.com/novnc/websockify ${HERE}/websockify
+        git clone https://github.com/getcohesive/websockify.git ${HERE}/websockify
 
         if [[ ! -e $WEBSOCKIFY ]]; then
             echo "Unable to locate ${HERE}/websockify/run after downloading"
